@@ -6,7 +6,7 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](
 
 Preview the website on [Vercel](https://airbnb-kairm.vercel.app/home):
 
-[![Open airbnb clone](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+[![Open airbnb clone]()](https://airbnb-kairm.vercel.app/home)
 
 ## Deploy your own
 
