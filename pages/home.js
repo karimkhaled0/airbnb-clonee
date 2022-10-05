@@ -53,11 +53,11 @@ function Home ({ exploreData, cardsData }) {
 
 
 export async function getServerSideProps() {
-  const exploreData = await fetch('https://links.papareact.com/pyp').then(
+  const exploreData = await fetch('https://www.jsonkeeper.com/b/4G1G').then(
     (res) => res.json()
     )
     
-    const cardsData = await fetch('https://jsonkeeper.com/b/VHHT').then((res) =>
+    const cardsData = await fetch('https://www.jsonkeeper.com/b/VHHT').then((res) =>
     res.json()
     )
     return {

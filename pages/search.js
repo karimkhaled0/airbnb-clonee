@@ -4,6 +4,9 @@ import Footer from '../components/Footer'
 import { useRouter } from 'next/router'
 import { format } from 'date-fns'
 import InfoCard from '../components/InfoCard'
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+import { Calendar } from 'react-date-range';
 
 
 function Search({ searchResults }) {
@@ -54,7 +57,7 @@ function Search({ searchResults }) {
 export default Search
 
 export async function getServerSideProps() {
-    const searchResults = await fetch("https://links.papareact.com/isz").then((res) => res.json());
+    const searchResults = await fetch("https://www.jsonkeeper.com/b/5NPS").then((res) => res.json());
 
     return {
         props: {
