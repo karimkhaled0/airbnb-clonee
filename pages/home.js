@@ -6,16 +6,14 @@ import MediumCard from '../components/MediumCard'
 import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
 
-function Home ({ exploreData, cardsData }) {
+function Home({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
         <title>Airbnb clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header
-      placeholder={"Start your search"}
-      />
+      <Header placeholder={'Start your search'} />
       <Banner />
       <main className="mx-auto max-w-7xl px-8 sm:px-16">
         <section className="pt-6">
@@ -51,21 +49,20 @@ function Home ({ exploreData, cardsData }) {
   )
 }
 
-
 export async function getServerSideProps() {
   const exploreData = await fetch('https://www.jsonkeeper.com/b/4G1G').then(
     (res) => res.json()
-    )
-    
-    const cardsData = await fetch('https://www.jsonkeeper.com/b/VHHT').then((res) =>
-    res.json()
-    )
-    return {
-      props: {
-        exploreData,
-        cardsData,
-      },
-    }
+  )
+
+  const cardsData = await fetch('https://www.jsonkeeper.com/b/VHHT').then(
+    (res) => res.json()
+  )
+  return {
+    props: {
+      exploreData,
+      cardsData,
+    },
   }
-  
-  export default Home
+}
+
+export default Home
